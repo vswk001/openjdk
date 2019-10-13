@@ -6,7 +6,7 @@ RUN apk update \
  && apk upgrade \
  && apk add --no-cache \
             fontconfig \
+            bash \
  && apk add --update ttf-dejavu \
  && fc-cache --force \
  && rm -rf /var/cache/apk/*
-
